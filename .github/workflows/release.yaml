@@ -4,6 +4,7 @@ on:
     types: [created]
 jobs:
   build:
+    name: Release application to npm
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

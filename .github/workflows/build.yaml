@@ -2,6 +2,7 @@ name: Release node package
 on: ['push']
 jobs:
   build:
+    name: Test and Build package
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

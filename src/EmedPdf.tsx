@@ -1,18 +1,17 @@
 import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-import { SpecialZoomLevel, Viewer, Worker } from '@react-pdf-viewer/core';
+import { SpecialZoomLevel, Viewer, ViewerProps } from '@react-pdf-viewer/core';
 import React, { PureComponent } from 'react';
 
 type IProps = {
-    url: string;
-};
+    classname?: string;
+} & ViewerProps;
 export default class EmedPdf extends PureComponent<IProps> {
     render() {
         return (
-            <div>
-                <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.7.570/build/pdf.worker.min.js">
-                    <Viewer fileUrl={this.props.url} defaultScale={SpecialZoomLevel.PageFit} plugins={[]} />
-                </Worker>
+            <div className={this.props.classname}>
+                <Viewer fileUrl={this.props.fileUrl} defaultScale={SpecialZoomLevel.PageFit} plugins={[]} />
             </div>
         );
     }
