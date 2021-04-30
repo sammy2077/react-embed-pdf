@@ -24,11 +24,16 @@ jobs:
           restore-keys: |
               yarn-dependencies-
     - name: Download dependencies
-      # if: steps.yarn-dependencies.outputs.cache-hit != 'true'
       run: yarn install --silent  --immutable
 
     - name: Check lint issues
       run: yarn lint
+    - name: Build the package
+      run: yarn build
     - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - uses: actions/upload-artifact@v2
+      with:
+        name: build-artifact
+        path: dist/*
