@@ -12,6 +12,7 @@
   "license": "MIT",
   "author": "Samuel Dervis <sam@agweria.com>",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet "
