@@ -6,8 +6,11 @@
   "repository": "https://github.com/samueldervis/react-embed-pdf.git",
   "author": "Samuel Dervis <sam@agweria.com>",
   "license": "MIT",
+  "keywords": ["pdf","react","embed pdf"],
   "private": false,
   "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "prepare": "yarn build",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet "
   },
   "devDependencies": {
