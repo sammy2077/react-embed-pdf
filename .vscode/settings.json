@@ -1,0 +1,15 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "eslint.lintTask.enable": true,
+    "editor.formatOnPaste": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
