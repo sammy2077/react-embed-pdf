@@ -1,6 +1,6 @@
 {
   "name": "react-embed-pdf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "A package to embed PDF in React",
   "keywords": [
@@ -13,6 +13,7 @@
   "author": "Samuel Dervis <sam@agweria.com>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [    "dist"  ],
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet "
