@@ -2,6 +2,9 @@ name: Release node package
 on:
   release:
     types: [created]
+  push:
+    tags:
+      - "v-*"
 jobs:
   build:
     name: Release application to npm
