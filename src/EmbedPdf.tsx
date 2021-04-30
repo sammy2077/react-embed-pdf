@@ -7,7 +7,8 @@ import React, { PureComponent } from 'react';
 type IProps = {
     classname?: string;
 } & ViewerProps;
-export default class EmedPdf extends PureComponent<IProps> {
+
+export default class EmbedPdf extends PureComponent<IProps> {
     render() {
         return (
             <div className={this.props.classname}>

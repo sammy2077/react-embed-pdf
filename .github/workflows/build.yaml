@@ -1,4 +1,4 @@
-name: Release node package
+name: Test and build application
 on: ['push']
 jobs:
   build:
