@@ -32,7 +32,8 @@
     "@react-pdf-viewer/search": "2.4.2",
     "@react-pdf-viewer/toolbar": "2.4.2",
     "@react-pdf-viewer/zoom": "2.4.2",
-    "clsx": "^1.1.1"
+    "clsx": "^1.1.1",
+    "pdfjs-dist": "2.7.570"
   },
   "devDependencies": {
     "@types/react": "^17.0.4",
