@@ -30,3 +30,9 @@ jobs:
     - name: Check lint issues
       run: yarn lint
     - run: yarn build
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: build-artifact
+        path: dist
+        retention-days: 5
