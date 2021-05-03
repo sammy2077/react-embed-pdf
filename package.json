@@ -1,6 +1,6 @@
 {
   "name": "react-embed-pdf",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "A package to embed PDF in React",
   "keywords": [
@@ -13,14 +13,25 @@
   "author": "Samuel Dervis <sam@agweria.com>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [    "dist"  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet "
   },
   "dependencies": {
-    "@react-pdf-viewer/core": "^2.4.2",
-    "@react-pdf-viewer/default-layout": "^2.4.2",
+    "@react-pdf-viewer/core": "2.4.2",
+    "@react-pdf-viewer/default-layout": "2.4.2",
+    "@react-pdf-viewer/full-screen": "2.4.2",
+    "@react-pdf-viewer/highlight": "2.4.2",
+    "@react-pdf-viewer/open": "2.4.2",
+    "@react-pdf-viewer/page-navigation": "2.4.2",
+    "@react-pdf-viewer/print": "2.4.2",
+    "@react-pdf-viewer/scroll-mode": "2.4.2",
+    "@react-pdf-viewer/search": "2.4.2",
+    "@react-pdf-viewer/toolbar": "2.4.2",
+    "@react-pdf-viewer/zoom": "2.4.2",
     "clsx": "^1.1.1"
   },
   "devDependencies": {
